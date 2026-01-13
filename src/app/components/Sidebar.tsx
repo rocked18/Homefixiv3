@@ -498,45 +498,6 @@ export function Sidebar({
                     </p>
                     <span className="bg-white px-2 py-0.5 text-xs font-medium rounded-full inline-block mt-1">Guest</span>
                   </div>
-                  <DropdownMenu>
-                    <DropdownMenuTrigger asChild>
-                      <button className="p-1 hover:bg-white/50 rounded-lg transition-colors">
-                        <EllipsisVertical className="h-5 w-5 text-gray-600" />
-                      </button>
-                    </DropdownMenuTrigger>
-                    <DropdownMenuContent side="right" align="end" className="w-56">
-                      {onSettingsClick && (
-                        <DropdownMenuItem onClick={onSettingsClick}>
-                          <Settings className="h-4 w-4" />
-                          <span>Settings</span>
-                        </DropdownMenuItem>
-                      )}
-                      {onHelpClick && (
-                        <DropdownMenuItem onClick={onHelpClick}>
-                          <HelpCircle className="h-4 w-4" />
-                          <span>Get Help</span>
-                        </DropdownMenuItem>
-                      )}
-                      {onAccountClick && (
-                        <DropdownMenuItem onClick={onAccountClick}>
-                          <User className="h-4 w-4" />
-                          <span>Account</span>
-                        </DropdownMenuItem>
-                      )}
-                      {onBillingClick && (
-                        <DropdownMenuItem onClick={onBillingClick}>
-                          <CreditCard className="h-4 w-4" />
-                          <span>Billing</span>
-                        </DropdownMenuItem>
-                      )}
-                      {onLogoutClick && (
-                        <DropdownMenuItem onClick={onLogoutClick}>
-                          <LogOut className="h-4 w-4" />
-                          <span>Log out</span>
-                        </DropdownMenuItem>
-                      )}
-                    </DropdownMenuContent>
-                  </DropdownMenu>
                 </div>
                 <div className="mt-5">
                   <Button
